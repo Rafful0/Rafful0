@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedro Rafful — Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:ital@0;1&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script>
+    (function () {
+      var saved = localStorage.getItem('theme') || 'auto';
+      if (saved !== 'auto') document.documentElement.setAttribute('data-theme', saved);
+    })();
+  </script>
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#home" class="brand">&lt;Pedro <span>Rafful/&gt;</span></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" type="button" title="Alternar tema" aria-label="Alternar tema">
+      <i class="fa-solid fa-circle-half-stroke"></i>
+      <span id="theme-toggle-label">Auto</span>
+    </button>
+  </header>
+
+  <main id="home">
+
+    <!-- ABOUT ME -->
+    <section id="about" class="about">
+      <div class="hero">
+        <img class="hero-avatar" src="profile.webp" alt="Foto de Pedro Rafful" />
+        <p class="hero-eyebrow">About Me</p>
+        <h1 class="hero-name">Pedro Rafful</h1>
+        <p class="hero-role">Software Developer</p>
+        <h2 class="hero-role">Welcome!</h2>
+        <p class="hero-bio">
+          I’m a developer focused on building scalable, 
+          well-architected applications across the full technology stack — from responsive interfaces to robust back-end systems, 
+          intelligent automation, and cloud deployment.
+        </p>
+        <p class="hero-bio">
+          I have designed type-safe, maintainable user interfaces with JavaScript, HTML and CSS, 
+          and built reliable server-side systems with Spring Boot. 
+          Strong foundation in relational database design using SQL, 
+          paired with experience deploying and scaling applications on AWS for secure, 
+          cost-efficient infrastructure.
+        </p>
+        <p class="hero-bio">
+          Right now, im developing projects using applied machine learning: 
+          Scikit-learn for predictive modeling and MediaPipe for real-time computer vision applications. 
+          Experienced in integrating AI directly into working systems — connecting language models to real tools and data sources through MCP 
+          (Model Context Protocol) integrations — to build intelligent agents and automation that extend beyond static predictions into 
+          practical, actionable workflows.
+        </p>
+        <ul class="hero-socials">
+          <li><a href="https://github.com/Rafful0" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/pedro-rafful-a57339336/" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="mailto:pedro.rafful2@gmail.com" title="E-mail" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+      <p class="section-eyebrow">What I work with</p>
+      <h2>Stack</h2>
+
+      <div id="skills-filters" class="project-filters">
+        <button type="button" class="filter-btn active" data-filter="all">All</button>
+        <button type="button" class="filter-btn" data-filter="Backend">Backend</button>
+        <button type="button" class="filter-btn" data-filter="Frontend">Frontend</button>
+        <button type="button" class="filter-btn" data-filter="Data Handling">Data Handling</button>
+        <button type="button" class="filter-btn" data-filter="Cloud">Cloud</button>
+        <button type="button" class="filter-btn" data-filter="Versionamento">Version Control</button>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card" data-category="Backend,Data Handling">
+          <i class="devicon-python-plain colored"></i><span>Python</span>
+          <ul class="skill-topics"><li>Machine Learning</li><li>Automation</li><li>Data Analysis</li></ul>
+        </div>
+        <div class="skill-card" data-category="Backend">
+          <i class="devicon-java-plain colored"></i><span>Java</span>
+          <ul class="skill-topics"><li>OOP</li><li>Data Structures</li><li>SpringBoot</li></ul>
+        </div>
+        <div class="skill-card" data-category="Frontend,Backend">
+          <i class="devicon-javascript-plain colored"></i><span>JavaScript</span>
+          <ul class="skill-topics"><li>DOM</li><li>WebSocket</li><li>Async/Await</li></ul>
+        </div>
+        <div class="skill-card" data-category="Frontend">
+          <i class="devicon-html5-plain colored"></i><span>HTML5</span>
+          <ul class="skill-topics"><li>Semantics</li><li>Acessibility</li></ul>
+        </div>
+        <div class="skill-card" data-category="Frontend">
+          <i class="devicon-css3-plain colored"></i><span>CSS</span>
+          <ul class="skill-topics"><li>Responsive</li><li>Flexbox/Grid</li></ul>
+        </div>
+        <div class="skill-card" data-category="Frontend">
+          <i class="devicon-react-original colored"></i><span>React</span>
+          <ul class="skill-topics"><li>Hooks</li><li>Component Creation</li></ul>
+        </div>
+        <div class="skill-card" data-category="Data Handling,Backend">
+          <i class="devicon-mysql-plain colored"></i><span>SQL</span>
+          <ul class="skill-topics"><li>Data Modeling</li><li>Queries</li></ul>
+        </div>
+        <div class="skill-card" data-category="Backend,Versionamento">
+          <i class="devicon-git-plain colored"></i><span>Git</span>
+          <ul class="skill-topics"><li>Version Control</li><li>Branching</li></ul>
+        </div>
+        <div class="skill-card" data-category="Backend,Versionamento">
+          <i class="devicon-github-original"></i><span>GitHub</span>
+          <ul class="skill-topics"><li>Colaboration</li><li>Pull Requests</li></ul>
+        </div>
+        <div class="skill-card" data-category="Data Handling">
+          <i class="fa-solid fa-chart-column" style="color:#F2C811"></i><span>Power BI</span>
+          <ul class="skill-topics"><li>Dashboards</li><li>DAX</li></ul>
+        </div>
+        <div class="skill-card" data-category="Data Handling">
+          <i class="fa-solid fa-file-excel" style="color:#217346"></i><span>Excel</span>
+          <ul class="skill-topics"><li>Dynamic</li><li>Formulas</li></ul>
+        </div>
+        <div class="skill-card" data-category="Data Handling">
+          <i class="devicon-r-plain colored"></i><span>R</span>
+          <ul class="skill-topics"><li>Statitics Analysis</li><li>Data Visualization</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+      <p class="section-eyebrow">Selected work</p>
+      <h2>Projects</h2>
+
+      <div id="project-filters" class="project-filters">
+        <button type="button" class="filter-btn active" data-filter="all">All</button>
+      </div>
+
+      <div class="project-group" data-category="ML & Data Science">
+        <h3 class="project-group-title">ML &amp; Data Science</h3>
+        <div class="projects-grid">
+
+          <div class="project-card">
+            <div class="project-icon"><i class="fa-solid fa-hand"></i></div>
+            <h3>Sign Language Real Time Translator</h3>
+            <p>
+              Computer vision project that analyses the hand gesture to identify it’s meaning,
+              based on what was recorded to be the meaning
+            </p>
+            <div class="project-tags">
+              <span>Python</span><span>Machine Learning</span><span>OpenCV</span><span>MediaPipe</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-group" data-category="Web Development">
+        <h3 class="project-group-title">Web Development</h3>
+        <div class="projects-grid">
+
+          <div class="project-card">
+            <div class="project-icon"><i class="fa-solid fa-bread-slice"></i></div>
+            <h3>QR Code Based Ordering System</h3>
+            <p>
+              Custom web application for a local açaí shop with the purpose of isolating 
+              the orders of clients based on the QR code they ordered from
+            </p>
+            <div class="project-tags">
+              <span>JavaScript</span><span>WebSocket</span><span>HTML</span><span>CSS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Pedro Rafful. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
